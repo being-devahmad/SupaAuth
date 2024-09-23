@@ -1,4 +1,8 @@
 import Header from "@/components/Header/Header";
+import {
+  signInWithGithub,
+  signInWithGoogle,
+} from "@/lib/actions/auth-provider";
 import { loginAction } from "@/lib/actions/login";
 import Link from "next/link";
 
@@ -54,12 +58,12 @@ export default async function Login({
         </form>
 
         <div className="flex justify-between">
-          <form action={""}>
+          <form action={signInWithGoogle}>
             <button className="bg-white text-black hover:bg-gray-500 hover:text-white duration-150 rounded-md px-4 py-2 text-foreground mb-2">
               Sign In With Google
             </button>
           </form>
-          <form action={""}>
+          <form action={signInWithGithub}>
             <button className="bg-white text-black hover:bg-gray-500 hover:text-white duration-150 rounded-md px-4 py-2 text-foreground mb-2">
               Sign In With Github
             </button>

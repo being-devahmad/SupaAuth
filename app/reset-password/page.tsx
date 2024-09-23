@@ -1,5 +1,6 @@
-import Header from '@/components/Header/Header';
-import Link from 'next/link';
+import Header from "@/components/Header/Header";
+import { resetPassword } from "@/lib/actions/reset-password";
+import Link from "next/link";
 
 export default async function ResetPassword({
   searchParams,
@@ -18,7 +19,10 @@ export default async function ResetPassword({
       </Link>
 
       <div className="w-full px-8 sm:max-w-md mx-auto mt-4">
-        <form className="animate-in flex-1 flex flex-col w-full justify-center gap-2 text-foreground mb-4">
+        <form
+          action={resetPassword}
+          className="animate-in flex-1 flex flex-col w-full justify-center gap-2 text-foreground mb-4"
+        >
           <label className="text-md" htmlFor="password">
             New Password
           </label>

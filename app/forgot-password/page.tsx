@@ -5,7 +5,10 @@ import Link from "next/link";
 export default async function ForgotPassword({
   searchParams,
 }: {
-  searchParams: { message: string };
+  searchParams: {
+    message: string;
+    code: string;
+  };
 }) {
   return (
     <div>
