@@ -1,5 +1,6 @@
-import Header from '@/components/Header/Header';
-import Link from 'next/link';
+import Header from "@/components/Header/Header";
+import { loginAction } from "@/lib/actions/login";
+import Link from "next/link";
 
 export default async function Login({
   searchParams,
@@ -18,7 +19,10 @@ export default async function Login({
       </Link>
 
       <div className="w-full px-8 sm:max-w-md mx-auto mt-4">
-        <form className="animate-in flex-1 flex flex-col w-full justify-center gap-2 text-foreground mb-4">
+        <form
+          action={loginAction}
+          className="animate-in flex-1 flex flex-col w-full justify-center gap-2 text-foreground mb-4"
+        >
           <label className="text-md" htmlFor="email">
             Email
           </label>
@@ -48,6 +52,19 @@ export default async function Login({
             </p>
           )}
         </form>
+
+        <div className="flex justify-between">
+          <form action={""}>
+            <button className="bg-white text-black hover:bg-gray-500 hover:text-white duration-150 rounded-md px-4 py-2 text-foreground mb-2">
+              Sign In With Google
+            </button>
+          </form>
+          <form action={""}>
+            <button className="bg-white text-black hover:bg-gray-500 hover:text-white duration-150 rounded-md px-4 py-2 text-foreground mb-2">
+              Sign In With Github
+            </button>
+          </form>
+        </div>
 
         <Link
           href="/forgot-password"

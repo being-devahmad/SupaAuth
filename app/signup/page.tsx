@@ -1,5 +1,6 @@
-import Header from '@/components/Header/Header';
-import Link from 'next/link';
+import Header from "@/components/Header/Header";
+import { signupAction } from "@/lib/actions/signup";
+import Link from "next/link";
 
 export default async function Signup({
   searchParams,
@@ -48,7 +49,10 @@ export default async function Signup({
             placeholder="••••••••"
             required
           />
-          <button className="bg-indigo-700 rounded-md px-4 py-2 text-foreground mb-2">
+          <button
+            formAction={signupAction}
+            className="bg-indigo-700 rounded-md px-4 py-2 text-foreground mb-2"
+          >
             Sign up
           </button>
 
@@ -60,7 +64,7 @@ export default async function Signup({
         </form>
 
         <Link
-          href="/signup"
+          href="/login"
           className="rounded-md no-underline text-foreground text-sm"
         >
           Already have an account? Sign In
