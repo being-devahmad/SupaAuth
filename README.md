@@ -1,0 +1,1 @@
+# Supabase Auth in Next JS
