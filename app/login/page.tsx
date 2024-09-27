@@ -13,8 +13,6 @@ export default async function Login({
 }) {
   return (
     <div>
-      <Header />
-
       <Link
         href="/"
         className="py-2 px-4 rounded-md no-underline text-foreground bg-btn-background hover:bg-btn-background-hover text-sm m-4"
@@ -59,12 +57,12 @@ export default async function Login({
 
         <div className="flex justify-between">
           <form action={signInWithGoogle}>
-            <button className="bg-white text-black hover:bg-gray-500 hover:text-white duration-150 rounded-md px-4 py-2 text-foreground mb-2">
+            <button className="bg-gray-400  hover:bg-gray-500 hover:text-white duration-150 rounded-md px-4 py-2 text-foreground mb-2">
               Sign In With Google
             </button>
           </form>
           <form action={signInWithGithub}>
-            <button className="bg-white text-black hover:bg-gray-500 hover:text-white duration-150 rounded-md px-4 py-2 text-foreground mb-2">
+            <button className="bg-gray-400 hover:bg-gray-500 hover:text-white duration-150 rounded-md px-4 py-2 text-foreground mb-2">
               Sign In With Github
             </button>
           </form>

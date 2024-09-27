@@ -7,9 +7,11 @@ export default async function User() {
     data: { user },
   } = await supabase.auth.getUser();
 
+  console.log("user-->", user);
+
   return (
     <div className="flex items-center gap-4">
-      Hey, {user ? user?.email : "user"}
+      Hey ,{user ? user?.email : " anonymous user "}
       <form>
         <button
           formAction={signOutAction}

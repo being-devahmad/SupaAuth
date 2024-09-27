@@ -8,7 +8,7 @@ export const signInWithGoogle = async () => {
     const { data, error } = await supabase.auth.signInWithOAuth({
         provider: 'google',
         options: {
-            redirectTo: 'https://jhhpnareynbmotqyneaa.supabase.co/auth/v1/callback',
+            redirectTo: 'http:localhost:3000/auth/callback',
             queryParams: {
                 access_type: 'offline',
                 prompt: 'consent',
@@ -17,7 +17,7 @@ export const signInWithGoogle = async () => {
     })
 
     if (data.url) {
-        console.log('googleData->', data)
+        // console.log('googleData->', data)
         redirect(data.url)
     }
 
@@ -29,7 +29,7 @@ export const signInWithGithub = async () => {
     const { data, error } = await supabase.auth.signInWithOAuth({
         provider: 'github',
         options: {
-            redirectTo: 'https://jhhpnareynbmotqyneaa.supabase.co/auth/v1/callback',
+            redirectTo: 'http:localhost:3000/auth/callback',
             queryParams: {
                 access_type: 'offline',
                 prompt: 'consent',
@@ -38,7 +38,7 @@ export const signInWithGithub = async () => {
     })
 
     if (data.url) {
-        console.log('githubData->', data)
+        // console.log('githubData->', data)
         redirect(data.url)
     }
 

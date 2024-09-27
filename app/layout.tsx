@@ -1,9 +1,10 @@
-import { GeistSans } from 'geist/font/sans';
-import './globals.css';
+import { GeistSans } from "geist/font/sans";
+import "./globals.css";
+import Header from "@/components/Header/Header";
 
 export const metadata = {
-  title: 'Supabase Next Auth',
-  description: '',
+  title: "Supabase Next Auth",
+  description: "",
 };
 
 export default function RootLayout({
@@ -14,7 +15,10 @@ export default function RootLayout({
   return (
     <html lang="en" className={GeistSans.className}>
       <body className="bg-background text-foreground">
-        <main className="min-h-screen">{children}</main>
+        <main className="min-h-screen">
+          <Header />
+          {children}
+        </main>
       </body>
     </html>
   );

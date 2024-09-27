@@ -20,5 +20,13 @@ export const loginAction = async (formData: FormData) => {
         return { error: error.message }
     }
 
-    redirect(`${origin}`)
+    const assuranceLevel = await supabase.auth.mfa.getAuthenticatorAssuranceLevel()
+    if (assuranceLevel.data?.nextLevel === 'aal2' &&
+        assuranceLevel.data?.nextLevel !== assuranceLevel.data?.currentLevel) {
+
+        redirect(`${origin}/verify-mfa`)
+        
+    }
+
+    redirect(`${origin}/dashboard`)
 }

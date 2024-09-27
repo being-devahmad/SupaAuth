@@ -9,7 +9,6 @@ export default async function Signup({
 }) {
   return (
     <div>
-      <Header />
 
       <Link
         href="/"
