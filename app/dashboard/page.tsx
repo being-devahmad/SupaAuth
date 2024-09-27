@@ -14,7 +14,7 @@ export default async function Dashboard() {
     <>
       <EnrollMFA />
 
-      <div className="text-7xl flex justify-center items-center w-full min-h-[70vh] border border-white">
+      <div className="text-7xl flex justify-center items-center w-full h-[90vh] border border-gray-700 bg-gray-900 text-gray-100">
         <p>Hello {data.user.email}</p>
       </div>
     </>
