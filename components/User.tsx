@@ -12,14 +12,16 @@ export default async function User() {
   return (
     <div className="flex items-center gap-4 text-gray-300">
       Hey, {user ? user?.email : "anonymous user"}
-      <form>
-        <button
-          formAction={signOutAction}
-          className="py-2 px-4 rounded-md bg-gray-800 hover:bg-gray-700 text-gray-200 transition duration-200"
-        >
-          Logout
-        </button>
-      </form>
+      {user && (
+        <form>
+          <button
+            formAction={signOutAction}
+            className="py-2 px-4 rounded-md bg-gray-800 hover:bg-gray-700 text-gray-200 transition duration-200"
+          >
+            Logout
+          </button>
+        </form>
+      )}
     </div>
   );
 }

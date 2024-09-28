@@ -48,11 +48,25 @@ export const verifyMFA = async (formData: FormData) => {
         challengeId,
         code: verificationCode
     })
+
     if (verify.error) {
         console.log(verify.error.message)
         throw verify.error
     }
-    redirect('/dashboard')
+
+    // Set a success message in the session
+    const { data, error } = await supabase.auth.setSession({
+        access_token: verify?.data?.access_token || '',
+        refresh_token: verify.data?.refresh_token || ''
+    })
+
+    if (error) {
+        console.log(error.message)
+        throw error
+    }
+
+    // Redirect with success message
+    redirect('/dashboard?mfaSuccess=true')
 
 
 }
