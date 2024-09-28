@@ -26,13 +26,16 @@
 
 ## Screenshots
 
-_Add your images/screenshots here_
+- **Home Page**  
+  ![Login Page]((public/images/login-page.png
+  
 
-- **Login Page**  
-  ![Login Page](path-to-your-image)
+  - **Dashboard Settings Page**  
+  ![Dashboard Settings Page](public/images/dashboard-settings.png)
+
 
 - **MFA Setup Page**  
-  ![MFA Setup](path-to-your-image)
+  ![MFA Setup Page](public/images/mfa-setup.png)
 
 ---
 
