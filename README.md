@@ -26,18 +26,14 @@
 
 ## Screenshots
 
-- **Home Page**  
-  ![Login Page](./public/images/login-page.png)
-  
+### Login Page
+![Login Page](./public/images/login-page.png)
 
-  - **Dashboard Settings Page**  
-  ![Dashboard Settings Page](./public/images/dashboard-settings.png)
+### Dashboard Settings Page
+![Dashboard Settings Page](./public/images/dashboard-settings.png)
 
-
-- **MFA Setup Page**  
-  ![MFA Setup Page](./public/images/mfa-setup.png)
-
----
+### MFA Setup Page
+![MFA Setup Page](./public/images/mfa-setup.png)
 
 ## How to Use
 
