@@ -1,4 +1,4 @@
-SupaAuth - Supabase Complete Authentication System
+## SupaAuth - Supabase Complete Authentication System
 
 **SupaAuth** is a comprehensive authentication system built using [Supabase](https://supabase.com/) and [Next.js](https://nextjs.org/). This system offers secure and flexible authentication methods, providing support for modern authentication standards. It includes login and signup mechanisms with various options like email and password, OAuth, magic links, OTP, and multi-factor authentication (MFA) to enhance security.
 
