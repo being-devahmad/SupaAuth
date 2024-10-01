@@ -47,7 +47,7 @@ export default function DashboardContent() {
 
   return (
     <>
-      <main className="flex-1 p-6">
+      <main className="flex-1 p-6 bg-gray-700">
         <div className="flex justify-between items-center mb-6">
           <h1 className="text-2xl font-bold">Settings</h1>
           <Button variant="outline" size="icon" className="rounded-full">

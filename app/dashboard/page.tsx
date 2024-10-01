@@ -17,7 +17,7 @@ export default async function Dashboard({
 
   return (
     <>
-      <div className="flex  h-screen bg-black text-gray-100">
+      <div className="flex  h-screen bg-gray-700 text-gray-100">
         <Sidebar />
         <div className="w-full flex flex-col justify-center items-center ">
           <EnrollMFA />
