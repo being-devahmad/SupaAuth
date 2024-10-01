@@ -28,17 +28,17 @@
 
 
 
-### Login Page
-![Login Page](![image](https://github.com/user-attachments/assets/01f76123-7747-47c7-9b9c-2fce2a1a8ace)
-)
+### Home Page
+![image](https://github.com/user-attachments/assets/eeca47e1-7f9f-4bb3-b330-fce6853a0595)
+
 
 ### Dashboard Settings Page
-![Dashboard Settings Page](![image](https://github.com/user-attachments/assets/3053212f-4955-4e07-894a-753d24928c30)
-)
+![image](https://github.com/user-attachments/assets/7de40637-8af1-494f-918c-c22ddd888606)
+
 
 ### MFA Setup Page
-![MFA Setup Page](![image](https://github.com/user-attachments/assets/f7f41eee-0307-4a37-8a28-3e5684fc355a)
-)
+![image](https://github.com/user-attachments/assets/82154b2b-a015-48f6-a2ff-18ede1513a4d)
+
 
 ---
 
