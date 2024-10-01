@@ -1,4 +1,4 @@
-# SupaAuth - Supabase Complete Authentication System
+![image](https://github.com/user-attachments/assets/f70c973a-f4b3-4857-a632-0b8fa6d424bd)# SupaAuth - Supabase Complete Authentication System
 
 **SupaAuth** is a comprehensive authentication system built using [Supabase](https://supabase.com/) and [Next.js](https://nextjs.org/). This system offers secure and flexible authentication methods, providing support for modern authentication standards. It includes login and signup mechanisms with various options like email and password, OAuth, magic links, OTP, and multi-factor authentication (MFA) to enhance security.
 
@@ -29,13 +29,16 @@
 
 
 ### Login Page
-![Login Page](./public/images/login-page.png)
+![Login Page](![image](https://github.com/user-attachments/assets/01f76123-7747-47c7-9b9c-2fce2a1a8ace)
+)
 
 ### Dashboard Settings Page
-![Dashboard Settings Page](public\images\dashboard-settings.png)
+![Dashboard Settings Page](![image](https://github.com/user-attachments/assets/3053212f-4955-4e07-894a-753d24928c30)
+)
 
 ### MFA Setup Page
-![MFA Setup Page](https://github.com/being-devahmad/supaauth/public/images/mfa-setup.png)
+![MFA Setup Page](![image](https://github.com/user-attachments/assets/f7f41eee-0307-4a37-8a28-3e5684fc355a)
+)
 
 ---
 
