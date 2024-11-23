@@ -2,7 +2,7 @@ import { AuthButtons } from "./AuthButtons";
 
 export const Hero = () => {
   return (
-    <div className="bg-gray-900 text-gray-100 h-[86vh]">
+    <div className="bg-gray-900 text-gray-100 h-[90.5vh]">
       <div className="relative flex flex-col justify-center items-center h-full">
         <div className="mx-auto max-w-full px-6">
           <div className="text-center">

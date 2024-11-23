@@ -15,6 +15,8 @@ export const signupAction = async (formData: FormData) => {
 
     const supabase = createClient()
 
+    console.log("supdabase->", supabase)
+
     const { data, error } = await supabase.auth.signUp({
         email,
         password,

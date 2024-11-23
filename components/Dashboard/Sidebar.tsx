@@ -1,5 +1,5 @@
 import { signOutAction } from "@/lib/actions/signout";
-import { Bell, Home, Lock, User, Settings, HelpCircle } from "lucide-react";
+import { Bell, Home, Lock, User, Settings, HelpCircle, User2, BookIcon } from "lucide-react";
 import Link from "next/link";
 
 export default function Sidebar() {
@@ -20,6 +20,20 @@ export default function Sidebar() {
           >
             <User className="h-5 w-5" />
             <span>Profile</span>
+          </Link>
+          <Link
+            href="/dashboard/bookings"
+            className="flex items-center space-x-2 hover:bg-gray-700 text-white rounded p-2"
+          >
+            <BookIcon className="h-5 w-5" />
+            <span>Bookings</span>
+          </Link>
+          <Link
+            href="/dashboard/users"
+            className="flex items-center space-x-2 hover:bg-gray-700 text-white rounded p-2"
+          >
+            <User2 className="h-5 w-5" />
+            <span>Users</span>
           </Link>
           <Link
             href="/dashboard/settings"
