@@ -1,5 +1,5 @@
-import { DataTable } from '@/components/Dashboard/Users/DataTable'
 import Sidebar from '@/components/Dashboard/Sidebar'
+import DataTable from '@/components/Dashboard/Users/DataTable'
 import React from 'react'
 
 const Users = () => {
