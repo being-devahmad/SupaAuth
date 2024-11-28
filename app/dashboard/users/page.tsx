@@ -5,7 +5,7 @@ import React from 'react'
 const Users = () => {
     return (
         <div className="flex h-screen bg-black text-gray-100">
-            <Sidebar />
+            {/* <Sidebar /> */}
             <DataTable />
         </div>
     )

@@ -5,7 +5,7 @@ export default function CustomDashboard() {
   return (
     <>
       <div className="flex h-screen bg-black text-gray-100">
-        <Sidebar />
+        {/* <Sidebar /> */}
         <DashboardContent />
       </div>
     </>

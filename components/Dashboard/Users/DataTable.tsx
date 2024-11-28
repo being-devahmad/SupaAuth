@@ -6,6 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { getBookings } from "@/lib/actions/dashboard-actions/getBookings";
+import { Button } from "@/components/ui/button";
 
 type Booking = {
     id: number;
@@ -86,6 +87,7 @@ export default function DataTable() {
                                 <TableHead className="font-bold">Phone</TableHead>
                                 <TableHead className="font-bold">Date</TableHead>
                                 <TableHead className="font-bold">Guests</TableHead>
+                                <TableHead className="font-bold">Actions</TableHead>
                             </TableRow>
                         </TableHeader>
                         <TableBody>
@@ -97,6 +99,10 @@ export default function DataTable() {
                                         <TableCell>{booking.phone}</TableCell>
                                         <TableCell>{booking.date}</TableCell>
                                         <TableCell className="text-center">{booking.guests}</TableCell>
+                                        <TableCell className="text-center flex gap-3">
+                                            <Button variant={'destructive'}>Edit</Button>
+                                            <Button variant={'destructive'}>Delete</Button>
+                                        </TableCell>
                                     </TableRow>
                                 ))
                             ) : (
